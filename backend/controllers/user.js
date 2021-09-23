@@ -11,7 +11,7 @@ exports.signup = (req,res,next) => {
         });
         user.save()
         .then(() => res.status(201).json({message: "account have been regestered"}))
-        .catch(error => res.status(400).json({message:error}));
+        .catch(error => res.status(400).json({ error: error, message: "This is an existing email. Please try another one!" }))
     })
     .catch(error => res.status(500).json({message:error}));
 };
