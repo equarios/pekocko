@@ -37,13 +37,6 @@ const errorHandler = error => {
 
 const server = http.createServer(app);
 
-server.on('request', () => {
-    let objDate = new Date();
-    console.log("request received from web app ("
-    +objDate.getDate()+"/"+(objDate.getMonth()+1)+"/"+objDate.getFullYear()+" à "
-    +objDate.getHours()+":"+objDate.getMinutes()+":"+objDate.getSeconds()+")");
-});
-
 server.on('error', errorHandler);
 server.on('listening', () => {
   const address = server.address();

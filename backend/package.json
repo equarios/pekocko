@@ -1,7 +1,7 @@
 {
-  "name": "learnodserver",
+  "name": "pekocko",
   "version": "1.0.0",
-  "description": "nodesserver",
+  "description": "backend rest api",
   "main": "server.js",
   "scripts": {
     "start": "npm run server",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "will add"
+    "url": "https://github.com/equarios/pekocko"
   },
   "keywords": [
     "no",
     "yet"
   ],
-  "author": "me",
+  "author": "verma",
   "license": "ISC",
   "dependencies": {
     "app-root-path": "^3.0.0",
