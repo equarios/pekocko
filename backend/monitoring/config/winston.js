@@ -5,7 +5,7 @@ var winston = require('winston');
 const logger = winston.createLogger({
     transports: [
         new winston.transports.File({
-            filename: `${appRoot}/monitoring/logs/activitiy.log`,
+            filename: `${appRoot}/monitoring/logs/activity.log`,
             level: 'info'
         }),
         new winston.transports.File({

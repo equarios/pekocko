@@ -1,2 +1,4 @@
 node_modules
 images
+monitoring/logs/activity.log
+monitoring/logs/error.log
