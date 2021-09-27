@@ -12,10 +12,7 @@
     "type": "git",
     "url": "https://github.com/equarios/pekocko"
   },
-  "keywords": [
-    "no",
-    "yet"
-  ],
+  
   "author": "verma",
   "license": "ISC",
   "dependencies": {
