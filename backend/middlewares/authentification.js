@@ -1,3 +1,5 @@
+//middleware for users authorization file type by userid using jwt
+
 const jsonWebToken = require('jsonwebtoken');
 
 module.exports = (req,res,next) => {

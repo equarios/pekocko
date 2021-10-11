@@ -1,3 +1,5 @@
+//middleware for used multer for diffrent type of images storing 
+
 const multer = require('multer');
  
 const MIME_TYPES = {

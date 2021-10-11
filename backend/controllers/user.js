@@ -1,3 +1,5 @@
+//creating controller for user while registering by using bcrpt jwt and matching data with database
+
 const bcrypt = require('bcrypt');
 const jsonWebToken = require('jsonwebtoken');
 const User = require('../models/User');

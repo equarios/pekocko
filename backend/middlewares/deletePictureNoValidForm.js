@@ -1,3 +1,5 @@
+//middleware for deleting sauce image while you wants to modify sauces and used fs file system module for working with files
+
 var fs = require('fs');
 
 module.exports = (req,res,next) => {

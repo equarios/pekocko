@@ -1,3 +1,6 @@
+//middleware for checking user is authorised or not by using jwt token
+
+
 const jsonWebToken = require('jsonwebtoken');
 
 module.exports = (req,res,next) => {

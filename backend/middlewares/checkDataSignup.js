@@ -1,3 +1,5 @@
+//middleware for checking and matching user input with requirements of email and password and used regex for validating email and password
+
 module.exports = (req,res,next) => {
     const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;

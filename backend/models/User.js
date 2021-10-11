@@ -1,3 +1,5 @@
+// validating user password and email by mongoose validator
+
 const mongoose = require('mongoose');
 const mongooseUniqueValidator = require('mongoose-unique-validator');
 

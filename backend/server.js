@@ -1,3 +1,5 @@
+//creating server that is running on port 3000
+
 const http = require('http');
 const app = require('./app');
 

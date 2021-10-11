@@ -1,3 +1,5 @@
+//middleware for while updating or modify data of sauce will get back old stored image by id
+
 const Sauce = require('../models/Sauce');
 
 module.exports = (req,res,next) => {

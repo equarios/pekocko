@@ -1,3 +1,5 @@
+//creating routes for sauce
+
 const express = require('express');
 const router = express.Router();
 const sauceController = require('../controllers/sauce');
@@ -9,6 +11,8 @@ const getOldPicture = require('../middlewares/getOldPictureAfterUpdate');
 const checkLike = require('../middlewares/checkUserLiking');
 const checkCreateForm = require('../middlewares/checkingCreateSauceForm');
 const deletePictureNoValidForm = require('../middlewares/deletePictureNoValidForm');
+
+//used middleware for protecting data while posting, getting, putting, delete, data to sauce used auth,multer,
 
 router.post('/', auth, multer, checkCreateForm, sauceController.createSauce, deletePictureNoValidForm);
 router.get('/', auth, sauceController.getAllSauces);

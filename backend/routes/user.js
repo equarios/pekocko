@@ -1,3 +1,5 @@
+//creating routes for users login and signup
+
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/user');

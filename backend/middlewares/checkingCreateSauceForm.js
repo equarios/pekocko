@@ -1,4 +1,4 @@
-
+// middleware for checking creating sauce form data is valid and have all the entries
 const controleRegex = [/^[\wéèàêûçàôë]{2}[\w\s-'éèàêûñçàôë]{0,48}$/i,
                     /^[\wéèàêûçàôë]{2}[\w\s-'éèàêûçñàôë]{0,40}$/i,
                     /^[\wéèàêûçàôë]{2}[\w\s-éèàêûçàñôë,?;.!:/"'()]{0,1098}$/i,

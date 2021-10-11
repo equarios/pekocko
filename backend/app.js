@@ -9,6 +9,7 @@ const morgan = require('morgan');
 const winston = require('./monitoring/config/winston');
 const helmet = require('helmet');
 
+// connect to mongodb db server by mongoose
 mongoose.connect('mongodb+srv://myself:0000011111@cluster0.oyi4v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true 
@@ -16,7 +17,7 @@ mongoose.connect('mongodb+srv://myself:0000011111@cluster0.oyi4v.mongodb.net/myF
 .then(() => console.log('connected'))
 .catch(() => console.log('error not connected'));
 mongoose.set('useCreateIndex', true);
-
+//using middleware in app
 app.use(morgan('combined', { stream: winston.stream }));
 app.use(helmet());
 app.use(bodyParser.json());
@@ -27,7 +28,7 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
 });
-
+//posting data to paths
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use('/api/auth', userRoutes);
 app.use('/api/sauces', sauceRoutes);
